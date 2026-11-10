@@ -1,0 +1,16 @@
+{
+  "name": "english-learn-server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Zero-dependency API + sync backend for the English vocab tool (embedded-engineer oriented).",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "set-password": "node src/cli.js set-password",
+    "info": "node src/cli.js info"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "english-learn",
+  "version": "0.1.0",
+  "private": true,
+  "description": "嵌入式工程师的英文技术生词收集 + 间隔重复复习工具",
+  "scripts": {
+    "setup": "npm --prefix web install",
+    "build": "npm --prefix web run build",
+    "start": "node server/src/index.js",
+    "dev:server": "node --watch server/src/index.js",
+    "dev:web": "npm --prefix web run dev",
+    "icons": "python web/tools/make-icons.py",
+    "import:ecdict": "node server/src/tools/import-ecdict.js",
+    "mock:llm": "node server/src/tools/mock-llm.js",
+    "set-password": "node server/src/cli.js set-password",
+    "info": "node server/src/cli.js info"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  }
+}
